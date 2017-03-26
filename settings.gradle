@@ -1,1 +1,1 @@
-include ':app', ':eventbus_001'
+include ':app', ':eventbus_001', ':eventbus_002'

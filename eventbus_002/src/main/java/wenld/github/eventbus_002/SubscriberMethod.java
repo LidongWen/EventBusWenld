@@ -1,4 +1,4 @@
-package wenld.github.eventbus_001;
+package wenld.github.eventbus_002;
 
 import java.lang.reflect.Method;
 
@@ -20,7 +20,7 @@ public class SubscriberMethod {
      */
    public String methodString;
 
-    public SubscriberMethod(Method method, Class<?> eventType, ThreadMode threadMode, int priority, boolean sticky) {
+    public SubscriberMethod( Method method, Class<?> eventType, ThreadMode threadMode, int priority, boolean sticky) {
         this.method = method;
         this.threadMode = threadMode;
         this.eventType = eventType;

@@ -16,7 +16,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class EventBus {
     private static EventBus ourInstance;
 
-    private final Map<Class<?>, CopyOnWriteArrayList<SubscriberMethod>> cacheMap;
+    private final Map<Class<?>, CopyOnWriteArrayList<Subscription>> cacheMap;
     private final Map<Object, List<Class<?>>> typesBySubscriber;
     //粘性
     private final Map<Class<?>, Object> stickyEvents;

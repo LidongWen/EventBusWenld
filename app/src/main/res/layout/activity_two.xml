@@ -7,28 +7,25 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/tv_one"
+        android:id="@+id/tv_two"
         android:layout_width="match_parent"
-        android:layout_height="40dp" />
+        android:layout_height="40dp"
+        android:gravity="center_vertical"/>
 
     <Button
         android:id="@+id/btn_"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:text="通知第二个" />
-
+        android:text="通知第一个" />
     <Button
-        android:id="@+id/btn_2"
+        android:id="@+id/btn_in"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:text="在子线程内通知第二个" />
-
+        android:text="在子线程内通知第一个" />
     <Button
-        android:id="@+id/btn_go"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:text="跳转第二个" />
+        android:id="@+id/btn_back"
+        android:text="返回第一个"/>
+
 </LinearLayout>

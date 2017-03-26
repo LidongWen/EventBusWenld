@@ -1,6 +1,7 @@
 package wenld.github.eventbus_001.util;
 
-import java.lang.reflect.InvocationTargetException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 import wenld.github.eventbus_001.SubscriberMethod;
 
@@ -13,7 +14,8 @@ import wenld.github.eventbus_001.SubscriberMethod;
  */
 public class InvokeHelper {
 
-    public static void post(SubscriberMethod subscriberMethod, boolean isMainThread) {
+
+    public static void post(SubscriberMethod subscriberMethod,Object event,boolean isMainThread) {
         switch (subscriberMethod.threadMode) {
             case POSTING:
                 //直接执行
@@ -38,16 +40,6 @@ public class InvokeHelper {
             default:
                 //抛异常
                 throw new IllegalStateException("Unknown thread mode: " + subscriberMethod.threadMode);
-        }
-    }
-
-    private void invokeSubscriber(SubscriberMethod subscriberMethod, Object event) {
-        try {
-            subscriberMethod.method.invoke(subscriberMethod.subscriber, event);
-        } catch (InvocationTargetException e) {
-//            throw new InvocationTargetException(subscriberMethod.subscriber,e.getCause(),event);
-        } catch (IllegalAccessException e) {
-            throw new IllegalStateException("Unexpected exception", e);
         }
     }
 }

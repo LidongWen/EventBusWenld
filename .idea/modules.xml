@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/EventBusWenld.iml" filepath="$PROJECT_DIR$/EventBusWenld.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/eventbus_001/eventbus_001.iml" filepath="$PROJECT_DIR$/eventbus_001/eventbus_001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eventbus_002/eventbus_002.iml" filepath="$PROJECT_DIR$/eventbus_002/eventbus_002.iml" />
     </modules>
   </component>
 </project>

@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/eventbus_001" />
+            <option value="$PROJECT_DIR$/eventbus_002" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
